@@ -4,7 +4,7 @@ export default function FinalCTA() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col items-center text-center gap-8">
         <h2
           className="font-display font-black uppercase text-[#F5F5F5] leading-none text-balance"
-          style={{ fontSize: 'clamp(48px, 7vw, 100px)' }}
+          style={{ fontSize: 'clamp(36px, 5vw, 72px)' }}
         >
           Ready to stop guessing?
         </h2>
