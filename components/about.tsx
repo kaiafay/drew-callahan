@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -6,13 +6,25 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-16 items-start">
           {/* Left: Portrait */}
-          <div className="relative w-full mb-12 lg:mb-0" style={{ aspectRatio: '3/4' }}>
+          <div
+            className="relative w-full mb-12 lg:mb-0"
+            style={{ aspectRatio: "3/4" }}
+          >
             <Image
-              src="/images/trainer-portrait.jpg"
+              src="/images/trainer-portrait.webp"
               alt="Drew Callahan, personal trainer"
               fill
-              className="object-cover"
-              style={{ filter: 'contrast(1.1)' }}
+              className="object-cover object-top"
+              style={{
+                filter: "grayscale(100%) contrast(1.1) brightness(0.85)",
+              }}
+            />
+            <div
+              className="absolute inset-0"
+              style={{
+                background:
+                  "linear-gradient(to bottom, rgba(13,13,13,0.35) 0%, transparent 25%, transparent 75%, rgba(13,13,13,0.45) 100%)",
+              }}
             />
           </div>
 
@@ -21,30 +33,33 @@ export default function About() {
             <p className="font-body text-xs uppercase tracking-[0.2em] text-[#888888] mb-6">
               / About Drew
             </p>
-            <h2 className="font-display font-black uppercase text-[#F5F5F5] leading-none text-balance mb-8"
-              style={{ fontSize: 'clamp(40px, 4.5vw, 64px)' }}>
-              No templates.{' '}
-              <br />
-              No fluff.{' '}
-              <br />
+            <h2
+              className="font-display font-black uppercase text-[#F5F5F5] leading-none text-balance mb-8"
+              style={{ fontSize: "clamp(40px, 4.5vw, 64px)" }}
+            >
+              No templates. <br />
+              No fluff. <br />
               Just work.
             </h2>
             <p className="font-body text-[#888888] text-base leading-relaxed mb-10 max-w-[480px]">
-              Eight years of coaching has taught me one thing: generic programs get generic results.
-              Every client gets a program built from scratch around their schedule, their history,
-              and where they want to go. I work with people who are serious about progress.
-              If that&apos;s you, let&apos;s talk.
+              Eight years of coaching has taught me one thing: generic programs
+              get generic results. Every client gets a program built from
+              scratch around their schedule, their history, and where they want
+              to go. I work with people who are serious about progress. If
+              that&apos;s you, let&apos;s talk.
             </p>
             <a
               href="#cta"
               className="font-body font-semibold text-[#3DDC97] text-sm hover:underline underline-offset-4 transition-all group inline-flex items-center gap-2"
             >
               Book a Free Call
-              <span className="group-hover:translate-x-1 transition-transform">→</span>
+              <span className="group-hover:translate-x-1 transition-transform">
+                →
+              </span>
             </a>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
