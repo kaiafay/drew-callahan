@@ -42,10 +42,11 @@ export default function Services() {
               </p>
               <a
                 href="#cta"
-                className="font-body font-semibold text-[#3DDC97] text-sm hover:underline underline-offset-4 transition-all inline-flex items-center gap-2 group/link"
+                className="font-body font-semibold text-[#3DDC97] text-sm inline-flex items-center gap-2 relative self-start group/link"
               >
                 Book a Call
-                <span className="group-hover/link:translate-x-1 transition-transform">→</span>
+                <span>→</span>
+                <span className="absolute bottom-0 left-0 h-[1.5px] w-0 bg-[#3DDC97] transition-all duration-300 ease-out group-hover/link:w-full" />
               </a>
             </div>
           ))}
