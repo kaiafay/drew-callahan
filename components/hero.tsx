@@ -6,7 +6,7 @@ export default function Hero() {
       {/* Main content */}
       <div className="flex-1 flex flex-col justify-center pt-16">
         {/* Ticker */}
-        <div className="mt-6">
+        <div className="mt-2 sm:mt-6">
           <div className="w-full h-px bg-[#2A2A2A]" />
           <div className="overflow-hidden py-4">
             <div
@@ -33,22 +33,22 @@ export default function Hero() {
         </div>
 
         {/* Subhead + CTAs */}
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full mt-10 mb-14">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full py-6 flex flex-col items-center text-center">
           <p className="font-body text-[#888888] text-base lg:text-lg leading-relaxed max-w-[480px] mb-8">
             1:1 coaching built around your life, your schedule, and the results
             you&apos;ve been chasing. In-person or online. No cookie-cutter
             programs.
           </p>
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-row gap-4">
             <a
               href="#cta"
-              className="font-body font-semibold text-sm bg-[#3DDC97] text-[#0D0D0D] px-7 py-3.5 rounded-none hover:bg-[#2bc87f] transition-colors"
+              className="font-body font-semibold text-xs sm:text-sm bg-[#3DDC97] text-[#0D0D0D] px-4 py-3 sm:px-7 sm:py-3.5 rounded-none hover:bg-[#2bc87f] transition-colors whitespace-nowrap"
             >
               Book a Free Call
             </a>
             <a
               href="#process"
-              className="font-body font-semibold text-sm border border-[#3DDC97] text-[#3DDC97] px-7 py-3.5 rounded-none hover:bg-[#3DDC97]/10 transition-colors"
+              className="font-body font-semibold text-xs sm:text-sm border border-[#3DDC97] text-[#3DDC97] px-4 py-3 sm:px-7 sm:py-3.5 rounded-none hover:bg-[#3DDC97]/10 transition-colors whitespace-nowrap"
             >
               See How It Works
             </a>
@@ -57,9 +57,9 @@ export default function Hero() {
       </div>
 
       {/* Cinematic photo pinned to bottom */}
-      <div className="w-full relative" style={{ aspectRatio: "16/4" }}>
+      <div className="w-full relative aspect-[16/9] sm:aspect-[16/6] lg:aspect-[16/4]">
         <Image
-          src="/images/hero-gym.jpg"
+          src="/images/hero-gym.webp"
           alt="Athlete training in a dramatically lit gym"
           fill
           className="object-cover"
@@ -67,6 +67,8 @@ export default function Hero() {
         />
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/40" />
+        {/* Top fade into background */}
+        <div className="absolute inset-x-0 top-0 h-2/5" style={{ background: "linear-gradient(to bottom, #0D0D0D 0%, rgba(13,13,13,0.85) 25%, rgba(13,13,13,0.5) 60%, transparent 100%)" }} />
       </div>
     </section>
   );

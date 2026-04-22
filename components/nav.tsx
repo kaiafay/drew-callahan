@@ -72,8 +72,11 @@ export default function Nav() {
       </header>
 
       {/* Mobile overlay */}
-      {menuOpen && (
-        <div className="fixed inset-0 z-[100] bg-[#0D0D0D] flex flex-col items-center justify-center gap-10">
+      <div
+        className={`fixed inset-0 z-[100] bg-[#0D0D0D] flex flex-col items-center justify-center gap-10 transition-opacity duration-200 ease-in-out ${
+          menuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+        }`}
+      >
           <button
             onClick={() => setMenuOpen(false)}
             className="absolute top-5 right-6 text-[#888888] hover:text-[#F5F5F5] transition-colors text-3xl font-light"
@@ -98,8 +101,7 @@ export default function Nav() {
           >
             Book a Free Call
           </a>
-        </div>
-      )}
+      </div>
     </>
   );
 }
