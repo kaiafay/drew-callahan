@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex flex-col bg-[#0D0D0D]">
+    <section className="relative min-h-[100dvh] flex flex-col bg-[#0D0D0D]">
       {/* Main content */}
       <div className="flex-1 flex flex-col justify-center pt-16">
         {/* Ticker */}
@@ -64,6 +64,7 @@ export default function Hero() {
           fill
           className="object-cover"
           priority
+          sizes="100vw"
         />
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/40" />

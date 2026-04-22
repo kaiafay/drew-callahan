@@ -18,7 +18,6 @@ export const metadata: Metadata = {
   title: 'Drew Callahan · Personal Training',
   description:
     '1:1 coaching built around your life, your schedule, and the results you\'ve been chasing. In-person or online. No cookie-cutter programs.',
-  generator: 'v0.app',
 }
 
 export default function RootLayout({

@@ -15,6 +15,7 @@ export default function About() {
               alt="Drew Callahan, personal trainer"
               fill
               className="object-cover object-top"
+              sizes="(max-width: 768px) 100vw, 50vw"
               style={{
                 filter: "grayscale(100%) contrast(1.1) brightness(0.85)",
               }}
