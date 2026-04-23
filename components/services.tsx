@@ -1,26 +1,29 @@
 const services = [
   {
-    title: '1:1 In-Person Training',
+    title: "1:1 In-Person Training",
     description:
-      'Train out of NYC with hands-on coaching, real-time form feedback, and programming that adjusts week to week. Best for clients who want accountability in the room.',
+      "Train out of NYC with hands-on coaching, real-time feedback, and programming that adjusts week to week. Best for people who want accountability in the room.",
   },
   {
-    title: 'Online Coaching',
+    title: "Online Coaching",
     description:
-      'Full programming, weekly check-ins, video form review, and direct access via app. Built for people with busy schedules who don\'t want to compromise on quality.',
+      "Full programming, weekly check-ins, video form review, and direct access via app. Built for people with busy schedules who don't want to compromise on quality.",
   },
-]
+];
 
 export default function Services() {
   return (
-    <section id="training" className="bg-[#0D0D0D] py-24 lg:py-32 border-t border-[#2A2A2A]">
+    <section
+      id="training"
+      className="bg-[#0D0D0D] py-24 lg:py-32 border-t border-[#2A2A2A]"
+    >
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <p className="font-body text-xs uppercase tracking-[0.2em] text-[#888888] mb-4">
           / Training
         </p>
         <h2
           className="font-display font-black uppercase text-[#F5F5F5] leading-none mb-16"
-          style={{ fontSize: 'clamp(40px, 5vw, 72px)' }}
+          style={{ fontSize: "clamp(40px, 5vw, 72px)" }}
         >
           Pick your format.
         </h2>
@@ -33,7 +36,7 @@ export default function Services() {
             >
               <h3
                 className="font-display font-bold uppercase text-[#F5F5F5] leading-tight"
-                style={{ fontSize: 'clamp(28px, 3vw, 40px)' }}
+                style={{ fontSize: "clamp(28px, 3vw, 40px)" }}
               >
                 {service.title}
               </h3>
@@ -53,5 +56,5 @@ export default function Services() {
         </div>
       </div>
     </section>
-  )
+  );
 }

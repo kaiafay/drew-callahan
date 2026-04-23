@@ -2,12 +2,12 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section id="about" className="bg-[#0D0D0D] py-24 lg:py-32">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-16 items-start">
+    <section id="about" className="bg-[#0D0D0D] py-24 sm:py-32">
+      <div className="max-w-7xl mx-auto px-6 md:px-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-0 sm:gap-16 items-start">
           {/* Left: Portrait */}
           <div
-            className="relative w-full mb-12 lg:mb-0"
+            className="relative w-full mb-12 sm:mb-0"
             style={{ aspectRatio: "3/4" }}
           >
             <Image
@@ -15,7 +15,7 @@ export default function About() {
               alt="Drew Callahan, personal trainer"
               fill
               className="object-cover object-top"
-              sizes="(max-width: 768px) 100vw, 50vw"
+              sizes="(max-width: 639px) 100vw, 50vw"
               style={{
                 filter: "grayscale(100%) contrast(1.1) brightness(0.85)",
               }}
@@ -44,10 +44,10 @@ export default function About() {
             </h2>
             <p className="font-body text-[#888888] text-base leading-relaxed mb-10 max-w-[480px]">
               Eight years of coaching has taught me one thing: generic programs
-              get generic results. Every client gets a program built from
-              scratch around their schedule, their history, and where they want
-              to go. I work with people who are serious about progress. If
-              that&apos;s you, let&apos;s talk.
+              get generic results. Every client I work with gets something built
+              specifically for them, not a template with their name on it. Good
+              enough isn't the goal. I work with people who feel the same way.
+              If you&apos;re serious about progress, let&apos;s talk.
             </p>
             <a
               href="#cta"

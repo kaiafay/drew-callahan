@@ -36,8 +36,8 @@ export default function Hero() {
         <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full py-6 flex flex-col items-center text-center">
           <p className="font-body text-[#888888] text-base lg:text-lg leading-relaxed max-w-[480px] mb-8">
             1:1 coaching built around your life, your schedule, and the results
-            you&apos;ve been chasing. In-person or online. No cookie-cutter
-            programs.
+            you&apos;ve been chasing. In-person or online. No guesswork, no
+            generic plans.
           </p>
           <div className="flex flex-row gap-4">
             <a
@@ -69,7 +69,13 @@ export default function Hero() {
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/40" />
         {/* Top fade into background */}
-        <div className="absolute inset-x-0 top-0 h-2/5" style={{ background: "linear-gradient(to bottom, #0D0D0D 0%, rgba(13,13,13,0.85) 25%, rgba(13,13,13,0.5) 60%, transparent 100%)" }} />
+        <div
+          className="absolute inset-x-0 top-0 h-2/5"
+          style={{
+            background:
+              "linear-gradient(to bottom, #0D0D0D 0%, rgba(13,13,13,0.85) 25%, rgba(13,13,13,0.5) 60%, transparent 100%)",
+          }}
+        />
       </div>
     </section>
   );

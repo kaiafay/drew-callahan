@@ -1,9 +1,9 @@
 const footerLinks = [
-  { label: 'About', href: '#about' },
-  { label: 'Training', href: '#training' },
-  { label: 'Results', href: '#results' },
-  { label: 'Process', href: '#process' },
-]
+  { label: "About", href: "#about" },
+  { label: "Training", href: "#training" },
+  { label: "Results", href: "#results" },
+  { label: "Process", href: "#process" },
+];
 
 export default function Footer() {
   return (
@@ -31,7 +31,7 @@ export default function Footer() {
           {/* Right */}
           <div className="flex flex-col items-center md:items-end gap-1">
             <a
-              href="https://instagram.com/drewcallahan"
+              href="https://instagram.com/"
               className="font-body text-xs text-[#888888] hover:text-[#3DDC97] transition-colors tracking-wide"
               target="_blank"
               rel="noopener noreferrer"
@@ -45,5 +45,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
